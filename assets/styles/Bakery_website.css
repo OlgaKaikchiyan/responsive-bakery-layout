@@ -1,0 +1,260 @@
+@font-face {
+    font-family: 'Mr De Haviland';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Mr De Haviland Regular'), local('MrDeHaviland-Regular'), url(http://fonts.gstatic.com/s/mrdehaviland/v5/fD8y4L6PJ4vqDk7z8Y8e2xKslWWn1MxsLfxBDz9WLj0.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+.font{
+    font-family: 'Mr De Haviland';
+    font-size: 32px;
+    margin: 20px 0;
+}
+
+body{
+    background: url('../Images/wood.jpg');
+}
+
+header{
+    width: 75%;
+    margin: 5px auto;
+}
+
+.label{
+    background: url("../Images/label.png") no-repeat;
+    background-size: cover;
+    display: block;
+    width: 	400px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label > h1{
+    margin: auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.logo > a{
+    position: relative;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 40px;
+    color: #412212;
+    text-transform: uppercase;
+}
+
+.menuWrapper{
+    background-color: blanchedalmond;
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    height: 40px;
+    
+}
+
+.menu > *{
+    padding: 10px;
+    min-width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu > a{
+    text-decoration: none;
+}
+
+.home{
+    background-color: #412212;
+}
+
+.menu  h2{
+    color: #412212;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    vertical-align: bottom;
+}
+
+.home > h2{
+    color: white;
+}
+
+.order{
+background-color: orange;
+color: white;
+min-width: 200px;
+}
+
+
+.order > h3{
+    text-align: center;
+}
+
+
+main{
+    max-width: 75%;
+    margin: 10px auto;
+    display: flex;
+}
+
+.image{
+border: 10px solid blanchedalmond;
+}
+
+.image > img{
+    height: 100%;
+}
+
+.middleWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 10px;
+    position: relative;
+}
+
+.text-middle{
+    background-color: orange;
+    padding: 10px 15px;
+    width: 100px;
+    position: absolute;
+    top: 220px;
+    left: 90px;
+}
+
+.text-middle > h1{
+    color: white;
+    font-size: 20px;
+    padding: 5px 15px;
+    border: 1px solid blanchedalmond;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.text > p{
+    margin: 25px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.rightWrapper{
+    height: inherit;
+    background-color: blanchedalmond;
+}
+
+.right{
+   margin: 50px 20px;
+}
+
+.right>h1{
+font-size: 2vw;
+}
+
+footer{
+    width: 75%;
+    margin: 10px auto;
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer > div{
+    margin: 20px 10px;
+    margin-bottom: 40px;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h4{
+    text-transform: uppercase;
+    color: #412212;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.border{
+    border-left: 1px dotted #412212;
+}
+
+@media screen and (max-width: 1090px){
+    .label{
+        background-color: blanchedalmond;
+        background-image: none;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+    
+    .menu{
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .order{
+        min-width: 0;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    .left{
+        display: none;
+    }
+
+    .middle-down, .middle-up{
+        margin: 10px 0;
+    }
+
+    .middle-up > img, .middle-down > img {
+        width: 100%;
+        
+    }
+
+    .text-middle{
+        position: static;
+        margin: 0 auto;
+    }
+
+    .middleWrapper{
+        margin: 0;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    footer>div{
+        margin-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .border{
+        border-top: 1px dotted #412212;
+        border-left: 0px;
+    }
+}
